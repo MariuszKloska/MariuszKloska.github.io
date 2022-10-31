@@ -325,6 +325,12 @@ header.active{
         border-radius: 0.5rem;
         display: flex;
         gap: 1rem;
+       
+    }
+
+    .home-icons img {
+        height: 2rem;
+        width: 2rem;
     }
 
     .scroll-button {
