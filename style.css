@@ -150,7 +150,6 @@ header.active{
 }
 
 .menu {
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
@@ -164,11 +163,17 @@ header.active{
     left: 0;
     right: 0;
     top: 0;
+    bottom: 0;
     transform: translateX(100%);
+    display: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu.active {
-    transform: translateX(0);
+    transform: translateX(0%);
+    display: flex;
+    
+    
 }
 
 .menu-link{
@@ -217,16 +222,16 @@ header.active{
 }
 
 .burger.active > span:nth-child(1){
-    transform: rotate(-45deg) translateY(1rem);
+    transform: rotate(-45deg) translateY(1.3rem);
     width: 80%;
 }
 
 .burger.active > span:nth-child(2){
-    transform: rotate(45deg) translateY(-0.75rem) translateX(0.15rem);
+    transform: rotate(45deg) translateY(-1.3rem) translateX(0.15rem);
 }
 
 .burger.active > span:nth-child(3){
-    transform: translateX(100vw);
+    display: none;
 }
 
 /* DESKTOP MENU  */
@@ -249,6 +254,8 @@ header.active{
         font-weight: normal;
         align-items: center;
         transform: translateX(0);
+        display: flex;
+        
     }
 
     .menu-link {
