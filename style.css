@@ -392,7 +392,7 @@ header.active{
     }
     @media only screen and (min-width: 1400px) {
         .home-content h1 {
-            font-size: rem;
+            font-size: 5rem;
         }
 
         .home-content span {
@@ -629,7 +629,7 @@ header.active{
     padding: 2rem;
     box-shadow: var(--shadow);
     border-radius: 1rem;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .technologies-item:hover{
