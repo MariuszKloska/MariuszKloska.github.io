@@ -393,6 +393,11 @@ header.active{
     @media only screen and (min-width: 1400px) {
         .home-content h1 {
             font-size: 5rem;
+            background: linear-gradient(60deg, var(--textColor), rgba(160, 75, 160, 0.712));
+            color: white;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .home-content span {
@@ -504,6 +509,11 @@ header.active{
     width: 2.2rem;
     margin: 0.8rem;
 }
+
+/* SLIDER */
+
+
+
 
 @media only screen and (min-width: 1000px){
     .projects-content{
@@ -687,6 +697,9 @@ header.active{
     border-radius: 0.7rem;
     border: 1px solid var(--textLightColor);
 }
+/* .contact-form-btn:focus {
+    outline-color: rgb(43, 21, 83);
+}
 
 .contact-form-btn{
     background: var(--main);
@@ -699,11 +712,61 @@ header.active{
     padding: 0.5rem;
     border-radius: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    
+}
+.contact-form-btn:after{
+
+    position: absolute;
+    left: -90px;
+    top: -25px;
+    content: "";
+    background-color: rgba(255,255,255, 0.3);
+    transform: rotate(20deg);
+    transition: transform 0.6s;
+}
+button:hover::after{
+    transform: translateX(500px) rotate(20deg);
 }
 
 .contact-form-btn:hover{
     background: var(--mainHover);
+} */
+
+.link-button {
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 1rem;
+    display: block;
+    color: white;
+    background: var(--textColor);
+    background: linear-gradient(to right top, var(--textColor), rgba(125, 60, 138, 0.6));
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.link-button:focus {
+    outline-color: white;
+}
+
+.link-button:after {
+    width: 50px;
+    height: 150%; 
+    position: absolute;
+    left: -90px;
+    top: -0.5rem;
+    content: "";
+    background-color: rgba(255,255,255, 0.3);
+    transform: rotate(20deg);
+    transition: transform 1s;
+}
+
+button:hover:after {
+    transform: translateX(500px) rotate(20deg);
 }
 
 @media only screen and (min-width: 900px){

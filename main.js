@@ -35,3 +35,5 @@ menuLinks.forEach(link=> link.addEventListener('click', (e)=> {
 
     window.scrollTo({top: section, behavior: "smooth"})
 }))
+
+// SLIDER CONTROL
